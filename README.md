@@ -6,8 +6,9 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+The Garden Life site will summarize nature observations at a local community garden over the past few years.  The home page will list broad categories of life such as birds or insects.  Clicking on one of the categories will bring up a list of subcategories.  Each category/subcategory will detail the number of species and observations in that category.
 
+A subcategory click will lead to a list of species observed.  Each species will contain a common name, scientific name, photo (if available), and information on total observations.
 
 ## Wireframes
 
@@ -18,8 +19,6 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 
 ### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
 - Home page with several sections about my site
