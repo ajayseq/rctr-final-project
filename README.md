@@ -1056,24 +1056,36 @@ If time permits, I will make use of the iNaturalist API to get details about an 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
+| Component | Description | 
+| --- | :---: |  
+| App | Includes all the routes| 
+| Home | Determines which component to call; sets up datacontext; includes header and nav | 
+| Nav | Breadcrumbs | 
+| Categorylist | API call to get categories | 
+| Category | Summary of each category | 
+| Specieslist | API call to get list of species in a category | 
+| Species | Summary of each species | 
+| Obslist | API call to get list of observations of a species | 
+| Obs | Images for each observations including iNaturalist API call for ID info | 
+
+## Additional Libraries
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
-
-
-## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+| Reactstrap | Bootstrap css|
+| Tailwind | More css|
+| Moment | Format date/time|
+| Html-react-parser | Convert string to JSX|
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
-
+If the back button is clicked, the breadcrumbs don't function correctly.  So I used useEffect to check what section we are on and delete all other links.
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+  useEffect(() => {
+    dataContext.breadcrumbs.forEach((crumb, index) => {
+      if (crumb.taxon === props.taxonid.toString()) {
+        dataContext.setBreadCrumbs(breadcrumbs => breadcrumbs.slice(0, index + 1));
+      }
+    });
+  }, [props.taxonid])
 ```
