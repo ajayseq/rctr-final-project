@@ -2,7 +2,8 @@
 
 ## Project Links
 
-- [CodeSandbox Link]()
+- [CodeSandbox Link](https://codesandbox.io/s/gifted-thunder-ctqmod)
+- [Production Link](https://sicloot.com/natlist/garden)
 
 ## Project Description
 
@@ -15,7 +16,6 @@ A subcategory click will lead to a list of species observed.  Each species will 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - <a href="https://wireframe.cc/b62NR4">Visual wireframes</a>
-- React architecture
 
 
 ### MVP/PostMVP - 5min
